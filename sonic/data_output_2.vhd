@@ -1,0 +1,51 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity data_out_module_2 is
+     port (
+        clk : in std_logic;  -- 2.56 MHz 클럭
+        data_outpin : out std_logic 
+    );
+end entity data_out_module_2;
+
+architecture Behavioral of data_out_module_2 is
+    signal i : integer range 0 to 143 := 0;
+	 signal j : integer range 0 to 143 := 0;
+    type binary_array is array (143 downto 0) of std_logic;
+    constant data : binary_array := (
+    '0', '0', '0', '0', '0', '1', '0', '0', '1',
+    '0', '0', '1', '0', '1', '1', '1', '1', '1',
+    '0', '0', '1', '0', '1', '0', '1', '1', '0',
+    '0', '0', '1', '0', '1', '0', '1', '1', '0',
+    '0', '1', '1', '1', '1', '0', '1', '1', '0',
+    '0', '1', '0', '1', '0', '0', '0', '0', '0',
+    '0', '1', '0', '1', '0', '1', '0', '0', '1',
+    '0', '1', '0', '1', '0', '1', '0', '0', '1',
+    '0', '0', '0', '0', '0', '1', '0', '0', '1',
+    '0', '0', '1', '0', '1', '1', '1', '1', '1',
+    '0', '0', '1', '0', '1', '0', '1', '1', '0',
+    '0', '0', '1', '0', '1', '0', '1', '1', '0',
+    '0', '1', '1', '1', '1', '0', '1', '1', '0',
+    '0', '1', '0', '1', '0', '0', '0', '0', '0',
+    '0', '1', '0', '1', '0', '1', '0', '0', '1',
+    '0', '1', '0', '1', '0', '1', '0', '0', '1'
+);
+begin 
+   data_in_clk : process (clk)
+   begin
+    if rising_edge(clk) then
+		  i <= i + 1 ;
+		  if i = 2 then 
+		   j <= j + 1 ;
+			i <= 0 ;
+ 		  end if;
+		  if j = 144 then 
+			j <= 0 ;
+ 		  end if;
+	 data_outpin <= data(j);
+	end if;
+   end process;
+	 
+   end behavioral;

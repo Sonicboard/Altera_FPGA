@@ -1,0 +1,43 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity data_out_module is
+     port (
+        clk : in std_logic;  -- 2.56 MHz 클럭
+        data : out std_logic;   
+    );
+end entity sonic;
+
+architecture Behavioral of data_out_module is
+    signal i : integer range 0 to 71 := 0;
+    type binary_array is array (63 downto 0) of std_logic;
+    constant data : binary_array := (
+    '1', '0', '0', '1', '1', '0', '0', '1',
+    '1', '0', '1', '0', '1', '1', '0', '0',
+    '0', '1', '1', '0', '0', '1', '1', '0',
+    '0', '1', '0', '1', '0', '0', '1', '1',
+    '1', '0', '0', '1', '1', '0', '0', '1',
+    '1', '0', '1', '0', '1', '1', '0', '0',
+    '0', '1', '1', '0', '0', '1', '1', '0',
+    '0', '1', '0', '1', '0', '0', '1', '1'
+);
+begin 
+   ini_latch : process (clk)
+   begin.
+    if rising_edge(clk) then
+        i <= i+1;
+		  data
+        if j = 17 then
+			latch <= '1';
+			latchpin <= latch;
+			j <= 0;
+			else 
+				latch <= '0';
+				latchpin <= latch;
+		  end if; 
+	end if;
+   end process;
+	 
+   end behavioral;

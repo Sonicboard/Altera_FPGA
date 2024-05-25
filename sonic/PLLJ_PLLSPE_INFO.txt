@@ -1,0 +1,5 @@
+PLL_Name	masterclock:inst1|altpll:altpll_component|masterclock_altpll1:auto_generated|pll1
+PLLJITTER	28
+PLLSPEmax	84
+PLLSPEmin	-53
+
