@@ -14,7 +14,13 @@ architecture Behavioral of data_out_module is
     signal i : integer range 0 to 143 := 0;
 	 signal j : integer range 0 to 143 := 0;
     type binary_array is array (143 downto 0) of std_logic;
+	 
+-- 
+	 
     constant data : binary_array := (
+-- Each column explainment
+-- column 0 1 2 3 4 5 6 7 8 9
+--  res  11   21   41   31   22   12   42   32
     '0', '0', '1', '0', '1', '0', '0', '0', '0',
     '0', '1', '1', '1', '1', '1', '0', '0', '1',
     '0', '1', '0', '1', '0', '1', '0', '0', '1',

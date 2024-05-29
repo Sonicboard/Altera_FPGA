@@ -106,7 +106,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 960 272 1136 288)
+	(rect 968 312 1144 328)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "data_outpin" (rect 90 0 146 12)(font "Arial" ))
 	(pt 0 8)
@@ -119,7 +119,7 @@ applicable agreement for further details.
 		(line (pt 82 8)(pt 78 12))
 		(line (pt 78 12)(pt 82 8))
 	)
-	(annotation_block (location)(rect 1136 288 1184 304))
+	(annotation_block (location)(rect 1144 328 1192 344))
 )
 (pin
 	(output)
@@ -242,10 +242,6 @@ applicable agreement for further details.
 	(pt 376 232)
 )
 (connector
-	(pt 624 272)
-	(pt 728 272)
-)
-(connector
 	(pt 560 192)
 	(pt 624 192)
 )
@@ -280,10 +276,6 @@ applicable agreement for further details.
 	(pt 624 504)
 )
 (connector
-	(pt 624 192)
-	(pt 624 272)
-)
-(connector
 	(pt 480 504)
 	(pt 480 560)
 )
@@ -294,10 +286,6 @@ applicable agreement for further details.
 (connector
 	(pt 624 392)
 	(pt 736 392)
-)
-(connector
-	(pt 624 272)
-	(pt 624 392)
 )
 (connector
 	(pt 624 392)
@@ -348,20 +336,32 @@ applicable agreement for further details.
 	(pt 1080 400)
 )
 (connector
-	(pt 952 272)
-	(pt 952 280)
+	(pt 952 320)
+	(pt 968 320)
 )
 (connector
+	(pt 968 320)
+	(pt 984 320)
+)
+(connector
+	(pt 624 272)
+	(pt 728 272)
+)
+(connector
+	(pt 952 272)
 	(pt 888 272)
+)
+(connector
+	(pt 952 320)
 	(pt 952 272)
 )
 (connector
-	(pt 952 280)
-	(pt 960 280)
+	(pt 624 192)
+	(pt 624 272)
 )
 (connector
-	(pt 960 280)
-	(pt 976 280)
+	(pt 624 272)
+	(pt 624 392)
 )
 (junction (pt 344 168))
 (junction (pt 624 272))
@@ -371,4 +371,4 @@ applicable agreement for further details.
 (junction (pt 624 392))
 (junction (pt 1048 168))
 (junction (pt 896 392))
-(junction (pt 960 280))
+(junction (pt 968 320))
