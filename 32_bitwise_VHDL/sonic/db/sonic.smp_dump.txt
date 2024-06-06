@@ -1,0 +1,8 @@
+
+State Machine - |Block1|sonic:inst|\data_latch:state
+Name \data_latch:state.COMPLETE_clock \data_latch:state.COMPLETE_latch \data_latch:state.RUN_latch \data_latch:state.RUN_DATA \data_latch:state.READY 
+\data_latch:state.READY 0 0 0 0 0 
+\data_latch:state.RUN_DATA 0 0 0 1 1 
+\data_latch:state.RUN_latch 0 0 1 0 1 
+\data_latch:state.COMPLETE_latch 0 1 0 0 1 
+\data_latch:state.COMPLETE_clock 1 0 0 0 1 
