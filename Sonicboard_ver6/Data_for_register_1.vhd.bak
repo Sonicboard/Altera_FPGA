@@ -1,0 +1,42 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_unsigned.all;
+
+entity Data_for_register_1 is
+    port (
+        CLK_2_5MHz : in std_logic;     -- 2.5MHz Input clock
+        data_outpin_1 : out std_logic  -- Shift Register data output
+    );
+end entity Data_for_register_1;
+
+architecture Behavioral of Data_for_register_1 is
+
+    signal Phase_data_index : integer range 0 to 63 := 0;  -- Correct index range
+	 
+    type binary_array is array (0 to 63) of std_logic;
+    constant Phase_data : binary_array := (
+        -- Each row represents one cycle of data
+        -- Each bit corresponds to a register output pin (Q0 to Q7)
+        --  Q0   Q1   Q2   Q3   Q4   Q5   Q6   Q7
+        '1', '0', '0', '0', '0', '1', '1', '1',
+        '1', '1', '0', '0', '0', '0', '1', '1',
+        '1', '1', '1', '0', '0', '0', '0', '1',
+        '1', '1', '1', '1', '0', '0', '0', '0',
+        '0', '1', '1', '1', '1', '0', '0', '0',
+        '0', '0', '1', '1', '1', '1', '0', '0',
+        '0', '0', '0', '1', '1', '1', '1', '0',
+        '0', '0', '0', '0', '1', '1', '1', '1'
+    );
+
+begin 
+    data_input_by_CLK : process (CLK_2_5MHz)
+    begin
+        if rising_edge(CLK_2_5MHz) then
+            Phase_data_index <= Phase_data_index + 1;
+            if Phase_data_index = 64 then
+                Phase_data_index <= 0;
+            end if;
+            data_outpin_1 <= Phase_data(Phase_data_index);
+        end if;
+    end process;
+end Behavioral;

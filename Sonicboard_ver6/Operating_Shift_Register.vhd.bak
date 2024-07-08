@@ -1,0 +1,32 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity Operating_Shift_Register is
+    port (
+        CLK_2_5MHz : in std_logic;        -- 2.5MHz Input frequency
+        latchpin : out std_logic;         -- Latch signal output
+        register_clockpin : out std_logic -- Shift Register clk signal output
+    );
+end entity Operating_Shift_Register;
+
+architecture Behavioral of Operating_Shift_Register is
+    signal latch : std_logic := '0';
+    signal latch_counter : integer range 0 to 7 := 0;  -- Counter range 0 ~ 7, Total dividing 8 cycles.
+begin
+    -- Generating Latch frequency
+    latch_process : process (CLK_2_5MHz)
+    begin
+        if rising_edge(CLK_2_5MHz) then
+            latch_counter <= latch_counter + 1;
+            if latch_counter = 7 then
+                latch <= not latch;  -- Toggle the latch signal
+                latch_counter <= 0;  -- Clear counter
+            end if;
+        end if;
+        latchpin <= latch;  -- Allocate the latch signal into latchpin port
+    end process;
+
+    -- Using same signal at shift register clk pin as CLK_2_5MHz
+    register_clockpin <= CLK_2_5MHz;  -- Directly assign the input clk signal to shift register clk pin
+
+end Behavioral;
