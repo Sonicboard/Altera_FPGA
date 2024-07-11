@@ -68,19 +68,19 @@ begin
             for i in 0 to 7 loop
                 Phase_Trans(i) <= Phase_pattern(phase_index(i));
             end loop;
-
-            -- Transpose Phase_for_Trans to Phase_for_register
-            for i in 0 to 7 loop
-                for j in 0 to 31 loop
-                    Phase_register(j)(i) <= Phase_Trans(i)(j);
-                end loop;
-            end loop;
         end if;
     end process;
 
     process (CLK_10_24MHz)
     begin
         if rising_edge(CLK_10_24MHz) then
+            -- Transpose Phase_for_Trans to Phase_for_register
+            for i in 0 to 7 loop
+                for j in 0 to 31 loop
+                    Phase_register(j)(i) <= Phase_Trans(i)(j);
+                end loop;
+            end loop;
+
             -- Assign the current byte from the transposed phase data
             current_byte <= Phase_register(Phase_data_index);
 

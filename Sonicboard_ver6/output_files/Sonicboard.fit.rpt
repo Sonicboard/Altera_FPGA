@@ -1,5 +1,5 @@
 Fitter report for Sonicboard
-Mon Jun 24 16:13:08 2024
+Thu Jul 11 21:10:53 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -68,7 +68,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Mon Jun 24 16:13:08 2024      ;
+; Fitter Status                      ; Successful - Thu Jul 11 21:10:53 2024      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; Sonicboard                                 ;
 ; Top-level Entity Name              ; Schematic                                  ;
@@ -152,15 +152,16 @@ applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 6           ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 20          ;
+; Maximum allowed            ; 14          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 6           ;
+; Maximum used               ; 14          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ; < 0.1%      ;
+;     Processors 2-14        ; < 0.1%      ;
+;     Processors 15-20       ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -213,7 +214,7 @@ applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/altera/13.1/Sonicboard/output_files/Sonicboard.pin.
+The pin-out file can be found in C:/Users/User/Documents/GitHub/Altera_FPGA/Sonicboard_ver6/output_files/Sonicboard.pin.
 
 
 +--------------------------------------------------------------------+
@@ -904,7 +905,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (11104): Parallel Compilation has detected 20 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 14 of the 14 physical processors detected instead.
 Info (119006): Selected device EP4CE6E22C8 for design "Sonicboard"
 Info (21077): Core supply voltage is 1.2V
 Info (21077): Low junction temperature is 0 degrees C
@@ -929,7 +930,19 @@ Info (176353): Automatically promoted node Masterclock:inst1|altpll:altpll_compo
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
 Info (176353): Automatically promoted node Masterclock:inst1|altpll:altpll_component|Masterclock_altpll:auto_generated|wire_pll1_clk[1] (placed in counter C2 of PLL_1)
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
-Critical Warning (332012): Synopsys Design Constraints File file not found: 'Sonicboard.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332104): Reading SDC File: 'timing_constraints.sdc'
+Warning (332174): Ignored filter at timing_constraints.sdc(1): CLK_10_24MHz could not be matched with a port
+Warning (332049): Ignored create_clock at timing_constraints.sdc(1): Argument <targets> is an empty collection
+    Info (332050): create_clock -name {clk_10_24MHz} -period 97.66 [get_ports {CLK_10_24MHz}]
+Warning (332174): Ignored filter at timing_constraints.sdc(2): data_in could not be matched with a port
+Warning (332174): Ignored filter at timing_constraints.sdc(2): clk_10_24MHz could not be matched with a clock
+Warning (332049): Ignored set_input_delay at timing_constraints.sdc(2): Argument <targets> is an empty collection
+    Info (332050): set_input_delay -clock {clk_10_24MHz} 5 [get_ports {data_in}]
+Warning (332049): Ignored set_input_delay at timing_constraints.sdc(2): Argument -clock is not an object ID
+Warning (332174): Ignored filter at timing_constraints.sdc(3): data_outpin_1 could not be matched with a port
+Warning (332049): Ignored set_output_delay at timing_constraints.sdc(3): Argument <targets> is an empty collection
+    Info (332050): set_output_delay -clock {clk_10_24MHz} 5 [get_ports {data_outpin_1}]
+Warning (332049): Ignored set_output_delay at timing_constraints.sdc(3): Argument -clock is not an object ID
 Info (332144): No user constrained generated clocks found in the design
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -954,23 +967,23 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.11 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.02 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
-Info (144001): Generated suppressed messages file C:/altera/13.1/Sonicboard/output_files/Sonicboard.fit.smsg
-Info: Quartus II 64-Bit Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5493 megabytes
-    Info: Processing ended: Mon Jun 24 16:13:08 2024
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (144001): Generated suppressed messages file C:/Users/User/Documents/GitHub/Altera_FPGA/Sonicboard_ver6/output_files/Sonicboard.fit.smsg
+Info: Quartus II 64-Bit Fitter was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 5969 megabytes
+    Info: Processing ended: Thu Jul 11 21:10:53 2024
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/altera/13.1/Sonicboard/output_files/Sonicboard.fit.smsg.
+The suppressed messages can be found in C:/Users/User/Documents/GitHub/Altera_FPGA/Sonicboard_ver6/output_files/Sonicboard.fit.smsg.
 
 
