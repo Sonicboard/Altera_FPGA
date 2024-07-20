@@ -18,7 +18,7 @@ architecture Behavioral of Data_for_register_1 is
 
     -- Define integer array type for phase indices
     type integer_array is array (0 to 7) of integer;
-    signal phase_index : integer_array := (0, 0, 0, 0, 0, 0, 0, 0); -- Phase index for each transducer
+    signal phase_index : integer_array := (0, 1, 3, 7, 10, 13, 15, 0); -- Phase index for each transducer
 
     type Phase_for_Trans is array (0 to 7) of std_logic_vector(31 downto 0);
     signal Phase_Trans : Phase_for_Trans;
@@ -110,3 +110,4 @@ begin
     latch_out <= latch_flag;
 
 end Behavioral;
+

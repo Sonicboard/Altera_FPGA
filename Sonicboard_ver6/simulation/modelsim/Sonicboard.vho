@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
--- DATE "07/20/2024 16:39:35"
+-- DATE "07/20/2024 17:16:19"
 
 -- 
 -- Device: Altera EP4CE6E22C8 Package TQFP144
@@ -71,10 +71,10 @@ SIGNAL \CLK_BASE~input_o\ : std_logic;
 SIGNAL \inst1|altpll_component|auto_generated|wire_pll1_fbout\ : std_logic;
 SIGNAL \inst1|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk\ : std_logic;
 SIGNAL \inst1|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk\ : std_logic;
-SIGNAL \inst|Phase_data_index[0]~5_combout\ : std_logic;
 SIGNAL \inst|bit_index[0]~2_combout\ : std_logic;
-SIGNAL \inst|bit_index[1]~1_combout\ : std_logic;
-SIGNAL \inst|bit_index[2]~0_combout\ : std_logic;
+SIGNAL \inst|bit_index[1]~0_combout\ : std_logic;
+SIGNAL \inst|bit_index[2]~1_combout\ : std_logic;
+SIGNAL \inst|Phase_data_index[0]~5_combout\ : std_logic;
 SIGNAL \inst|Equal0~0_combout\ : std_logic;
 SIGNAL \inst|Phase_data_index[0]~6\ : std_logic;
 SIGNAL \inst|Phase_data_index[1]~7_combout\ : std_logic;
@@ -84,10 +84,25 @@ SIGNAL \inst|Phase_data_index[2]~10\ : std_logic;
 SIGNAL \inst|Phase_data_index[3]~11_combout\ : std_logic;
 SIGNAL \inst|Phase_data_index[3]~12\ : std_logic;
 SIGNAL \inst|Phase_data_index[4]~13_combout\ : std_logic;
-SIGNAL \inst|Phase_register[16][0]~feeder_combout\ : std_logic;
-SIGNAL \inst|Phase_register[16][0]~q\ : std_logic;
-SIGNAL \inst|Mux7~0_combout\ : std_logic;
-SIGNAL \inst|data_outpin_1~feeder_combout\ : std_logic;
+SIGNAL \inst|Phase_register[10][3]~feeder_combout\ : std_logic;
+SIGNAL \inst|Phase_register[10][3]~q\ : std_logic;
+SIGNAL \inst|Mux1~0_combout\ : std_logic;
+SIGNAL \inst|Mux4~0_combout\ : std_logic;
+SIGNAL \inst|Mux6~0_combout\ : std_logic;
+SIGNAL \inst|Mux6~1_combout\ : std_logic;
+SIGNAL \inst|Mux1~3_combout\ : std_logic;
+SIGNAL \inst|Mux8~2_combout\ : std_logic;
+SIGNAL \inst|Mux1~4_combout\ : std_logic;
+SIGNAL \inst|Mux5~0_combout\ : std_logic;
+SIGNAL \inst|Mux8~3_combout\ : std_logic;
+SIGNAL \inst|Mux1~1_combout\ : std_logic;
+SIGNAL \inst|Mux1~2_combout\ : std_logic;
+SIGNAL \inst|Mux2~0_combout\ : std_logic;
+SIGNAL \inst|Mux3~0_combout\ : std_logic;
+SIGNAL \inst|Mux3~1_combout\ : std_logic;
+SIGNAL \inst|Mux8~0_combout\ : std_logic;
+SIGNAL \inst|Mux8~1_combout\ : std_logic;
+SIGNAL \inst|Mux8~4_combout\ : std_logic;
 SIGNAL \inst|data_outpin_1~q\ : std_logic;
 SIGNAL \inst1|altpll_component|auto_generated|wire_pll1_clk\ : std_logic_vector(4 DOWNTO 0);
 SIGNAL \inst|current_byte\ : std_logic_vector(7 DOWNTO 0);
@@ -281,24 +296,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	outclk => \inst1|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk\);
 
--- Location: LCCOMB_X23_Y1_N16
-\inst|Phase_data_index[0]~5\ : cycloneive_lcell_comb
--- Equation(s):
--- \inst|Phase_data_index[0]~5_combout\ = \inst|Phase_data_index\(0) $ (VCC)
--- \inst|Phase_data_index[0]~6\ = CARRY(\inst|Phase_data_index\(0))
-
--- pragma translate_off
-GENERIC MAP (
-	lut_mask => "0011001111001100",
-	sum_lutc_input => "datac")
--- pragma translate_on
-PORT MAP (
-	datab => \inst|Phase_data_index\(0),
-	datad => VCC,
-	combout => \inst|Phase_data_index[0]~5_combout\,
-	cout => \inst|Phase_data_index[0]~6\);
-
--- Location: LCCOMB_X23_Y1_N0
+-- Location: LCCOMB_X25_Y6_N30
 \inst|bit_index[0]~2\ : cycloneive_lcell_comb
 -- Equation(s):
 -- \inst|bit_index[0]~2_combout\ = !\inst|bit_index\(0)
@@ -312,7 +310,7 @@ PORT MAP (
 	datac => \inst|bit_index\(0),
 	combout => \inst|bit_index[0]~2_combout\);
 
--- Location: FF_X23_Y1_N1
+-- Location: FF_X25_Y6_N31
 \inst|bit_index[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -326,22 +324,22 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst|bit_index\(0));
 
--- Location: LCCOMB_X23_Y1_N2
-\inst|bit_index[1]~1\ : cycloneive_lcell_comb
+-- Location: LCCOMB_X25_Y6_N20
+\inst|bit_index[1]~0\ : cycloneive_lcell_comb
 -- Equation(s):
--- \inst|bit_index[1]~1_combout\ = \inst|bit_index\(1) $ (\inst|bit_index\(0))
+-- \inst|bit_index[1]~0_combout\ = \inst|bit_index\(0) $ (\inst|bit_index\(1))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0000111111110000",
+	lut_mask => "0101101001011010",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
+	dataa => \inst|bit_index\(0),
 	datac => \inst|bit_index\(1),
-	datad => \inst|bit_index\(0),
-	combout => \inst|bit_index[1]~1_combout\);
+	combout => \inst|bit_index[1]~0_combout\);
 
--- Location: FF_X23_Y1_N3
+-- Location: FF_X25_Y6_N21
 \inst|bit_index[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -350,28 +348,28 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \inst1|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk\,
-	d => \inst|bit_index[1]~1_combout\,
+	d => \inst|bit_index[1]~0_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|bit_index\(1));
 
--- Location: LCCOMB_X23_Y1_N6
-\inst|bit_index[2]~0\ : cycloneive_lcell_comb
+-- Location: LCCOMB_X25_Y6_N6
+\inst|bit_index[2]~1\ : cycloneive_lcell_comb
 -- Equation(s):
--- \inst|bit_index[2]~0_combout\ = \inst|bit_index\(2) $ (((\inst|bit_index\(0) & \inst|bit_index\(1))))
+-- \inst|bit_index[2]~1_combout\ = \inst|bit_index\(2) $ (((\inst|bit_index\(0) & \inst|bit_index\(1))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0011110011110000",
+	lut_mask => "0101101011110000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst|bit_index\(0),
+	dataa => \inst|bit_index\(0),
 	datac => \inst|bit_index\(2),
 	datad => \inst|bit_index\(1),
-	combout => \inst|bit_index[2]~0_combout\);
+	combout => \inst|bit_index[2]~1_combout\);
 
--- Location: FF_X23_Y1_N7
+-- Location: FF_X25_Y6_N7
 \inst|bit_index[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -380,28 +378,45 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \inst1|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk\,
-	d => \inst|bit_index[2]~0_combout\,
+	d => \inst|bit_index[2]~1_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|bit_index\(2));
 
--- Location: LCCOMB_X23_Y1_N4
+-- Location: LCCOMB_X24_Y7_N16
+\inst|Phase_data_index[0]~5\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|Phase_data_index[0]~5_combout\ = \inst|Phase_data_index\(0) $ (VCC)
+-- \inst|Phase_data_index[0]~6\ = CARRY(\inst|Phase_data_index\(0))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0101010110101010",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \inst|Phase_data_index\(0),
+	datad => VCC,
+	combout => \inst|Phase_data_index[0]~5_combout\,
+	cout => \inst|Phase_data_index[0]~6\);
+
+-- Location: LCCOMB_X25_Y6_N0
 \inst|Equal0~0\ : cycloneive_lcell_comb
 -- Equation(s):
 -- \inst|Equal0~0_combout\ = (\inst|bit_index\(2) & (\inst|bit_index\(0) & \inst|bit_index\(1)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1000100000000000",
+	lut_mask => "1010000000000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
 	dataa => \inst|bit_index\(2),
-	datab => \inst|bit_index\(0),
+	datac => \inst|bit_index\(0),
 	datad => \inst|bit_index\(1),
 	combout => \inst|Equal0~0_combout\);
 
--- Location: FF_X23_Y1_N17
+-- Location: FF_X24_Y7_N17
 \inst|Phase_data_index[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -416,7 +431,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst|Phase_data_index\(0));
 
--- Location: LCCOMB_X23_Y1_N18
+-- Location: LCCOMB_X24_Y7_N18
 \inst|Phase_data_index[1]~7\ : cycloneive_lcell_comb
 -- Equation(s):
 -- \inst|Phase_data_index[1]~7_combout\ = (\inst|Phase_data_index\(1) & (!\inst|Phase_data_index[0]~6\)) # (!\inst|Phase_data_index\(1) & ((\inst|Phase_data_index[0]~6\) # (GND)))
@@ -434,7 +449,7 @@ PORT MAP (
 	combout => \inst|Phase_data_index[1]~7_combout\,
 	cout => \inst|Phase_data_index[1]~8\);
 
--- Location: FF_X23_Y1_N19
+-- Location: FF_X24_Y7_N19
 \inst|Phase_data_index[1]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -449,7 +464,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst|Phase_data_index\(1));
 
--- Location: LCCOMB_X23_Y1_N20
+-- Location: LCCOMB_X24_Y7_N20
 \inst|Phase_data_index[2]~9\ : cycloneive_lcell_comb
 -- Equation(s):
 -- \inst|Phase_data_index[2]~9_combout\ = (\inst|Phase_data_index\(2) & (\inst|Phase_data_index[1]~8\ $ (GND))) # (!\inst|Phase_data_index\(2) & (!\inst|Phase_data_index[1]~8\ & VCC))
@@ -467,7 +482,7 @@ PORT MAP (
 	combout => \inst|Phase_data_index[2]~9_combout\,
 	cout => \inst|Phase_data_index[2]~10\);
 
--- Location: FF_X23_Y1_N21
+-- Location: FF_X24_Y7_N21
 \inst|Phase_data_index[2]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -482,7 +497,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst|Phase_data_index\(2));
 
--- Location: LCCOMB_X23_Y1_N22
+-- Location: LCCOMB_X24_Y7_N22
 \inst|Phase_data_index[3]~11\ : cycloneive_lcell_comb
 -- Equation(s):
 -- \inst|Phase_data_index[3]~11_combout\ = (\inst|Phase_data_index\(3) & (!\inst|Phase_data_index[2]~10\)) # (!\inst|Phase_data_index\(3) & ((\inst|Phase_data_index[2]~10\) # (GND)))
@@ -500,7 +515,7 @@ PORT MAP (
 	combout => \inst|Phase_data_index[3]~11_combout\,
 	cout => \inst|Phase_data_index[3]~12\);
 
--- Location: FF_X23_Y1_N23
+-- Location: FF_X24_Y7_N23
 \inst|Phase_data_index[3]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -515,7 +530,7 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst|Phase_data_index\(3));
 
--- Location: LCCOMB_X23_Y1_N24
+-- Location: LCCOMB_X24_Y7_N24
 \inst|Phase_data_index[4]~13\ : cycloneive_lcell_comb
 -- Equation(s):
 -- \inst|Phase_data_index[4]~13_combout\ = \inst|Phase_data_index[3]~12\ $ (!\inst|Phase_data_index\(4))
@@ -530,7 +545,7 @@ PORT MAP (
 	cin => \inst|Phase_data_index[3]~12\,
 	combout => \inst|Phase_data_index[4]~13_combout\);
 
--- Location: FF_X23_Y1_N25
+-- Location: FF_X24_Y7_N25
 \inst|Phase_data_index[4]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -545,10 +560,10 @@ PORT MAP (
 	devpor => ww_devpor,
 	q => \inst|Phase_data_index\(4));
 
--- Location: LCCOMB_X23_Y1_N12
-\inst|Phase_register[16][0]~feeder\ : cycloneive_lcell_comb
+-- Location: LCCOMB_X24_Y7_N6
+\inst|Phase_register[10][3]~feeder\ : cycloneive_lcell_comb
 -- Equation(s):
--- \inst|Phase_register[16][0]~feeder_combout\ = VCC
+-- \inst|Phase_register[10][3]~feeder_combout\ = VCC
 
 -- pragma translate_off
 GENERIC MAP (
@@ -556,10 +571,10 @@ GENERIC MAP (
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	combout => \inst|Phase_register[16][0]~feeder_combout\);
+	combout => \inst|Phase_register[10][3]~feeder_combout\);
 
--- Location: FF_X23_Y1_N13
-\inst|Phase_register[16][0]\ : dffeas
+-- Location: FF_X24_Y7_N7
+\inst|Phase_register[10][3]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
 	is_wysiwyg => "true",
@@ -567,27 +582,121 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \inst1|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk\,
-	d => \inst|Phase_register[16][0]~feeder_combout\,
+	d => \inst|Phase_register[10][3]~feeder_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
-	q => \inst|Phase_register[16][0]~q\);
+	q => \inst|Phase_register[10][3]~q\);
 
--- Location: LCCOMB_X23_Y1_N10
-\inst|Mux7~0\ : cycloneive_lcell_comb
+-- Location: LCCOMB_X24_Y7_N0
+\inst|Mux1~0\ : cycloneive_lcell_comb
 -- Equation(s):
--- \inst|Mux7~0_combout\ = (\inst|Phase_data_index\(4) & \inst|Phase_register[16][0]~q\)
+-- \inst|Mux1~0_combout\ = (!\inst|Phase_data_index\(2) & (!\inst|Phase_data_index\(0) & !\inst|Phase_data_index\(1)))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1100110000000000",
+	lut_mask => "0000000000000011",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datab => \inst|Phase_data_index\(4),
-	datad => \inst|Phase_register[16][0]~q\,
-	combout => \inst|Mux7~0_combout\);
+	datab => \inst|Phase_data_index\(2),
+	datac => \inst|Phase_data_index\(0),
+	datad => \inst|Phase_data_index\(1),
+	combout => \inst|Mux1~0_combout\);
 
--- Location: FF_X23_Y1_N11
+-- Location: LCCOMB_X25_Y6_N26
+\inst|Mux4~0\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|Mux4~0_combout\ = (\inst|Phase_register[10][3]~q\ & (\inst|Phase_data_index\(4) $ (((!\inst|Mux1~0_combout\ & \inst|Phase_data_index\(3))))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1000010010001000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \inst|Phase_data_index\(4),
+	datab => \inst|Phase_register[10][3]~q\,
+	datac => \inst|Mux1~0_combout\,
+	datad => \inst|Phase_data_index\(3),
+	combout => \inst|Mux4~0_combout\);
+
+-- Location: FF_X25_Y6_N27
+\inst|current_byte[3]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \inst1|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk\,
+	d => \inst|Mux4~0_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \inst|current_byte\(3));
+
+-- Location: LCCOMB_X24_Y7_N2
+\inst|Mux6~0\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|Mux6~0_combout\ = (\inst|Phase_data_index\(0) & (\inst|Phase_data_index\(2) & (\inst|Phase_data_index\(3) & \inst|Phase_data_index\(1))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1000000000000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \inst|Phase_data_index\(0),
+	datab => \inst|Phase_data_index\(2),
+	datac => \inst|Phase_data_index\(3),
+	datad => \inst|Phase_data_index\(1),
+	combout => \inst|Mux6~0_combout\);
+
+-- Location: LCCOMB_X25_Y6_N22
+\inst|Mux6~1\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|Mux6~1_combout\ = (\inst|Phase_register[10][3]~q\ & (\inst|Phase_data_index\(4) $ (\inst|Mux6~0_combout\)))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0110011000000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \inst|Phase_data_index\(4),
+	datab => \inst|Mux6~0_combout\,
+	datad => \inst|Phase_register[10][3]~q\,
+	combout => \inst|Mux6~1_combout\);
+
+-- Location: FF_X25_Y6_N23
+\inst|current_byte[1]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \inst1|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk\,
+	d => \inst|Mux6~1_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \inst|current_byte\(1));
+
+-- Location: LCCOMB_X25_Y6_N18
+\inst|Mux1~3\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|Mux1~3_combout\ = (\inst|Phase_data_index\(4) & \inst|Phase_register[10][3]~q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010101000000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \inst|Phase_data_index\(4),
+	datad => \inst|Phase_register[10][3]~q\,
+	combout => \inst|Mux1~3_combout\);
+
+-- Location: FF_X25_Y6_N19
 \inst|current_byte[0]\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -596,26 +705,269 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \inst1|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk\,
-	d => \inst|Mux7~0_combout\,
+	d => \inst|Mux1~3_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|current_byte\(0));
 
--- Location: LCCOMB_X23_Y1_N8
-\inst|data_outpin_1~feeder\ : cycloneive_lcell_comb
+-- Location: LCCOMB_X25_Y6_N24
+\inst|Mux8~2\ : cycloneive_lcell_comb
 -- Equation(s):
--- \inst|data_outpin_1~feeder_combout\ = \inst|current_byte\(0)
+-- \inst|Mux8~2_combout\ = (\inst|bit_index\(0) & ((\inst|current_byte\(1)) # ((\inst|bit_index\(1))))) # (!\inst|bit_index\(0) & (((\inst|current_byte\(0) & !\inst|bit_index\(1)))))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "1111111100000000",
+	lut_mask => "1111000010101100",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
-	datad => \inst|current_byte\(0),
-	combout => \inst|data_outpin_1~feeder_combout\);
+	dataa => \inst|current_byte\(1),
+	datab => \inst|current_byte\(0),
+	datac => \inst|bit_index\(0),
+	datad => \inst|bit_index\(1),
+	combout => \inst|Mux8~2_combout\);
 
--- Location: FF_X23_Y1_N9
+-- Location: LCCOMB_X24_Y7_N14
+\inst|Mux1~4\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|Mux1~4_combout\ = \inst|Phase_data_index\(4) $ (((\inst|Phase_data_index\(2) & ((\inst|Phase_data_index\(1)) # (\inst|Phase_data_index\(0))))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0011011111001000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \inst|Phase_data_index\(1),
+	datab => \inst|Phase_data_index\(2),
+	datac => \inst|Phase_data_index\(0),
+	datad => \inst|Phase_data_index\(4),
+	combout => \inst|Mux1~4_combout\);
+
+-- Location: LCCOMB_X24_Y7_N28
+\inst|Mux5~0\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|Mux5~0_combout\ = (\inst|Phase_register[10][3]~q\ & ((\inst|Phase_data_index\(3) & (\inst|Mux1~4_combout\)) # (!\inst|Phase_data_index\(3) & ((\inst|Phase_data_index\(4))))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1000101010000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \inst|Phase_register[10][3]~q\,
+	datab => \inst|Mux1~4_combout\,
+	datac => \inst|Phase_data_index\(3),
+	datad => \inst|Phase_data_index\(4),
+	combout => \inst|Mux5~0_combout\);
+
+-- Location: FF_X24_Y7_N29
+\inst|current_byte[2]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \inst1|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk\,
+	d => \inst|Mux5~0_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \inst|current_byte\(2));
+
+-- Location: LCCOMB_X25_Y6_N28
+\inst|Mux8~3\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|Mux8~3_combout\ = (\inst|Mux8~2_combout\ & ((\inst|current_byte\(3)) # ((!\inst|bit_index\(1))))) # (!\inst|Mux8~2_combout\ & (((\inst|current_byte\(2) & \inst|bit_index\(1)))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1011100011001100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \inst|current_byte\(3),
+	datab => \inst|Mux8~2_combout\,
+	datac => \inst|current_byte\(2),
+	datad => \inst|bit_index\(1),
+	combout => \inst|Mux8~3_combout\);
+
+-- Location: LCCOMB_X25_Y6_N10
+\inst|Mux1~1\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|Mux1~1_combout\ = (\inst|Phase_register[10][3]~q\ & (\inst|Phase_data_index\(4) $ (((\inst|Phase_data_index\(3)) # (!\inst|Mux1~0_combout\)))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0100010010000100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \inst|Phase_data_index\(4),
+	datab => \inst|Phase_register[10][3]~q\,
+	datac => \inst|Mux1~0_combout\,
+	datad => \inst|Phase_data_index\(3),
+	combout => \inst|Mux1~1_combout\);
+
+-- Location: FF_X25_Y6_N11
+\inst|current_byte[6]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \inst1|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk\,
+	d => \inst|Mux1~1_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \inst|current_byte\(6));
+
+-- Location: LCCOMB_X24_Y7_N10
+\inst|Mux1~2\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|Mux1~2_combout\ = \inst|Phase_data_index\(4) $ (((\inst|Phase_data_index\(2)) # ((\inst|Phase_data_index\(1) & \inst|Phase_data_index\(0)))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0001001111101100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \inst|Phase_data_index\(1),
+	datab => \inst|Phase_data_index\(2),
+	datac => \inst|Phase_data_index\(0),
+	datad => \inst|Phase_data_index\(4),
+	combout => \inst|Mux1~2_combout\);
+
+-- Location: LCCOMB_X24_Y7_N8
+\inst|Mux2~0\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|Mux2~0_combout\ = (\inst|Phase_register[10][3]~q\ & ((\inst|Phase_data_index\(3) & ((!\inst|Phase_data_index\(4)))) # (!\inst|Phase_data_index\(3) & (\inst|Mux1~2_combout\))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0011101000000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \inst|Mux1~2_combout\,
+	datab => \inst|Phase_data_index\(4),
+	datac => \inst|Phase_data_index\(3),
+	datad => \inst|Phase_register[10][3]~q\,
+	combout => \inst|Mux2~0_combout\);
+
+-- Location: FF_X24_Y7_N9
+\inst|current_byte[5]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \inst1|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk\,
+	d => \inst|Mux2~0_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \inst|current_byte\(5));
+
+-- Location: LCCOMB_X24_Y7_N12
+\inst|Mux3~0\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|Mux3~0_combout\ = \inst|Phase_data_index\(4) $ (((\inst|Phase_data_index\(3)) # ((\inst|Phase_data_index\(2) & \inst|Phase_data_index\(1)))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "0000011111111000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \inst|Phase_data_index\(2),
+	datab => \inst|Phase_data_index\(1),
+	datac => \inst|Phase_data_index\(3),
+	datad => \inst|Phase_data_index\(4),
+	combout => \inst|Mux3~0_combout\);
+
+-- Location: LCCOMB_X24_Y7_N26
+\inst|Mux3~1\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|Mux3~1_combout\ = (\inst|Mux3~0_combout\ & \inst|Phase_register[10][3]~q\)
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010101000000000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \inst|Mux3~0_combout\,
+	datad => \inst|Phase_register[10][3]~q\,
+	combout => \inst|Mux3~1_combout\);
+
+-- Location: FF_X24_Y7_N27
+\inst|current_byte[4]\ : dffeas
+-- pragma translate_off
+GENERIC MAP (
+	is_wysiwyg => "true",
+	power_up => "low")
+-- pragma translate_on
+PORT MAP (
+	clk => \inst1|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk\,
+	d => \inst|Mux3~1_combout\,
+	devclrn => ww_devclrn,
+	devpor => ww_devpor,
+	q => \inst|current_byte\(4));
+
+-- Location: LCCOMB_X25_Y6_N16
+\inst|Mux8~0\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|Mux8~0_combout\ = (\inst|bit_index\(0) & ((\inst|current_byte\(5)) # ((\inst|bit_index\(1))))) # (!\inst|bit_index\(0) & (((\inst|current_byte\(4) & !\inst|bit_index\(1)))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1111000010101100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \inst|current_byte\(5),
+	datab => \inst|current_byte\(4),
+	datac => \inst|bit_index\(0),
+	datad => \inst|bit_index\(1),
+	combout => \inst|Mux8~0_combout\);
+
+-- Location: LCCOMB_X25_Y6_N12
+\inst|Mux8~1\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|Mux8~1_combout\ = (\inst|Mux8~0_combout\ & (((\inst|current_byte\(0)) # (!\inst|bit_index\(1))))) # (!\inst|Mux8~0_combout\ & (\inst|current_byte\(6) & ((\inst|bit_index\(1)))))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1100101011110000",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \inst|current_byte\(6),
+	datab => \inst|current_byte\(0),
+	datac => \inst|Mux8~0_combout\,
+	datad => \inst|bit_index\(1),
+	combout => \inst|Mux8~1_combout\);
+
+-- Location: LCCOMB_X25_Y6_N8
+\inst|Mux8~4\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \inst|Mux8~4_combout\ = (\inst|bit_index\(2) & ((\inst|Mux8~1_combout\))) # (!\inst|bit_index\(2) & (\inst|Mux8~3_combout\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1110111001000100",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \inst|bit_index\(2),
+	datab => \inst|Mux8~3_combout\,
+	datad => \inst|Mux8~1_combout\,
+	combout => \inst|Mux8~4_combout\);
+
+-- Location: FF_X25_Y6_N9
 \inst|data_outpin_1\ : dffeas
 -- pragma translate_off
 GENERIC MAP (
@@ -624,7 +976,7 @@ GENERIC MAP (
 -- pragma translate_on
 PORT MAP (
 	clk => \inst1|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk\,
-	d => \inst|data_outpin_1~feeder_combout\,
+	d => \inst|Mux8~4_combout\,
 	devclrn => ww_devclrn,
 	devpor => ww_devpor,
 	q => \inst|data_outpin_1~q\);
