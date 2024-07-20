@@ -5,16 +5,18 @@ use IEEE.std_logic_unsigned.all;
 entity Data_for_register_1 is
     port (
         CLK_10_24MHz : in std_logic;    -- 10.24MHz Input clock
-        data_outpin_1 : out std_logic  -- Shift Register data output
+        data_outpin_1 : out std_logic;  -- Shift Register data output
+        latch_out : out std_logic       -- Latch output signal
     );
 end entity Data_for_register_1;
 
 architecture Behavioral of Data_for_register_1 is
     signal Phase_data_index : integer range 0 to 31 := 0;  -- Index for the current byte
-    signal bit_index : integer range 0 to 7 := 0;         -- Index for the current bit
-    signal current_byte : std_logic_vector(7 downto 0);   -- Holds the current 8-bit data
-	 
-	 -- Define integer array type for phase indices
+    signal bit_index : integer range 0 to 7 := 0;          -- Index for the current bit
+    signal current_byte : std_logic_vector(7 downto 0);    -- Holds the current 8-bit data
+    signal latch_flag : std_logic := '0';                  -- Latch signal
+
+    -- Define integer array type for phase indices
     type integer_array is array (0 to 7) of integer;
     signal phase_index : integer_array := (0, 0, 0, 0, 0, 0, 0, 0); -- Phase index for each transducer
 
@@ -93,12 +95,18 @@ begin
                 -- Move to the next byte when all bits of the current byte are transmitted
                 if Phase_data_index = 31 then
                     Phase_data_index <= 0;
+                    latch_flag <= '1';
                 else
                     Phase_data_index <= Phase_data_index + 1;
+                    latch_flag <= '0';
                 end if;
             else
                 bit_index <= bit_index + 1;
             end if;
         end if;
     end process;
+
+    -- Output the latch signal
+    latch_out <= latch_flag;
+
 end Behavioral;

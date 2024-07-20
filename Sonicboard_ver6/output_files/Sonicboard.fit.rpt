@@ -1,5 +1,5 @@
 Fitter report for Sonicboard
-Thu Jul 11 21:10:53 2024
+Sat Jul 20 16:39:28 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -68,7 +68,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Thu Jul 11 21:10:53 2024      ;
+; Fitter Status                      ; Successful - Sat Jul 20 16:39:28 2024      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; Sonicboard                                 ;
 ; Top-level Entity Name              ; Schematic                                  ;
@@ -152,16 +152,16 @@ applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 20          ;
-; Maximum allowed            ; 14          ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 10          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 14          ;
+; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-14        ; < 0.1%      ;
-;     Processors 15-20       ;   0.0%      ;
+;     Processors 2-10        ; < 0.1%      ;
+;     Processors 11-12       ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -214,7 +214,7 @@ applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/User/Documents/GitHub/Altera_FPGA/Sonicboard_ver6/output_files/Sonicboard.pin.
+The pin-out file can be found in C:/Users/USER/Documents/github/Altera_FPGA/Sonicboard_ver6/output_files/Sonicboard.pin.
 
 
 +--------------------------------------------------------------------+
@@ -905,7 +905,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
-Info (11104): Parallel Compilation has detected 20 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 14 of the 14 physical processors detected instead.
+Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 10 of the 10 physical processors detected instead.
 Info (119006): Selected device EP4CE6E22C8 for design "Sonicboard"
 Info (21077): Core supply voltage is 1.2V
 Info (21077): Low junction temperature is 0 degrees C
@@ -973,17 +973,17 @@ Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file C:/Users/User/Documents/GitHub/Altera_FPGA/Sonicboard_ver6/output_files/Sonicboard.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/USER/Documents/github/Altera_FPGA/Sonicboard_ver6/output_files/Sonicboard.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 5969 megabytes
-    Info: Processing ended: Thu Jul 11 21:10:53 2024
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 5740 megabytes
+    Info: Processing ended: Sat Jul 20 16:39:28 2024
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:02
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/User/Documents/GitHub/Altera_FPGA/Sonicboard_ver6/output_files/Sonicboard.fit.smsg.
+The suppressed messages can be found in C:/Users/USER/Documents/github/Altera_FPGA/Sonicboard_ver6/output_files/Sonicboard.fit.smsg.
 
 

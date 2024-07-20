@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Sonicboard
-Thu Jul 11 21:10:50 2024
+Sat Jul 20 16:39:22 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -46,7 +46,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jul 11 21:10:50 2024      ;
+; Analysis & Synthesis Status        ; Successful - Sat Jul 20 16:39:22 2024      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; Sonicboard                                 ;
 ; Top-level Entity Name              ; Schematic                                  ;
@@ -155,15 +155,15 @@ applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 20          ;
-; Maximum allowed            ; 14          ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 10          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-20        ;   0.0%      ;
+;     Processors 2-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -172,15 +172,15 @@ applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                       ; Library ;
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+---------+
-; Schematic.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/User/Documents/GitHub/Altera_FPGA/Sonicboard_ver6/Schematic.bdf           ;         ;
-; Data_for_register_1.vhd          ; yes             ; User VHDL File                     ; C:/Users/User/Documents/GitHub/Altera_FPGA/Sonicboard_ver6/Data_for_register_1.vhd ;         ;
-; Masterclock.vhd                  ; yes             ; User Wizard-Generated File         ; C:/Users/User/Documents/GitHub/Altera_FPGA/Sonicboard_ver6/Masterclock.vhd         ;         ;
+; Schematic.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/USER/Documents/github/Altera_FPGA/Sonicboard_ver6/Schematic.bdf           ;         ;
+; Data_for_register_1.vhd          ; yes             ; User VHDL File                     ; C:/Users/USER/Documents/github/Altera_FPGA/Sonicboard_ver6/Data_for_register_1.vhd ;         ;
+; Masterclock.vhd                  ; yes             ; User Wizard-Generated File         ; C:/Users/USER/Documents/github/Altera_FPGA/Sonicboard_ver6/Masterclock.vhd         ;         ;
 ; altpll.tdf                       ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/altpll.tdf                          ;         ;
 ; aglobal131.inc                   ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc                      ;         ;
 ; stratix_pll.inc                  ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/stratix_pll.inc                     ;         ;
 ; stratixii_pll.inc                ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/stratixii_pll.inc                   ;         ;
 ; cycloneii_pll.inc                ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/megafunctions/cycloneii_pll.inc                   ;         ;
-; db/masterclock_altpll.v          ; yes             ; Auto-Generated Megafunction        ; C:/Users/User/Documents/GitHub/Altera_FPGA/Sonicboard_ver6/db/masterclock_altpll.v ;         ;
+; db/masterclock_altpll.v          ; yes             ; Auto-Generated Megafunction        ; C:/Users/USER/Documents/github/Altera_FPGA/Sonicboard_ver6/db/masterclock_altpll.v ;         ;
 +----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------+---------+
 
 
@@ -236,7 +236,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+------------------------------+----------------------------------------------------------------------------+
 ; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance              ; IP Include File                                                            ;
 +--------+--------------+---------+--------------+--------------+------------------------------+----------------------------------------------------------------------------+
-; Altera ; ALTPLL       ; 13.1    ; N/A          ; N/A          ; |Schematic|Masterclock:inst1 ; C:/Users/User/Documents/GitHub/Altera_FPGA/Sonicboard_ver6/Masterclock.vhd ;
+; Altera ; ALTPLL       ; 13.1    ; N/A          ; N/A          ; |Schematic|Masterclock:inst1 ; C:/Users/USER/Documents/github/Altera_FPGA/Sonicboard_ver6/Masterclock.vhd ;
 +--------+--------------+---------+--------------+--------------+------------------------------+----------------------------------------------------------------------------+
 
 
@@ -1446,9 +1446,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Thu Jul 11 21:10:49 2024
+    Info: Processing started: Sat Jul 20 16:39:20 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Sonicboard -c Sonicboard
-Info (11104): Parallel Compilation has detected 20 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 14 of the 14 physical processors detected instead.
+Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 10 of the 10 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file schematic.bdf
     Info (12023): Found entity 1: Schematic
 Info (12021): Found 2 design units, including 1 entities, in source file data_for_register_1.vhd
@@ -1527,7 +1527,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/mast
     Info (12023): Found entity 1: Masterclock_altpll
 Info (12128): Elaborating entity "Masterclock_altpll" for hierarchy "Masterclock:inst1|altpll:altpll_component|Masterclock_altpll:auto_generated"
 Info (12128): Elaborating entity "Data_for_register_1" for hierarchy "Data_for_register_1:inst"
-Warning (10540): VHDL Signal Declaration warning at Data_for_register_1.vhd(19): used explicit default value for signal "phase_index" because signal was never assigned a value
+Warning (10540): VHDL Signal Declaration warning at Data_for_register_1.vhd(21): used explicit default value for signal "phase_index" because signal was never assigned a value
 Warning (12162): EDA synthesis tool is specified as "Custom", but Library Mapping File is not specified
 Warning (12163): EDA synthesis tool is specified as "Custom", but VCC is not specified
 Warning (12164): EDA synthesis tool is specified as "Custom", but GND is not specified
@@ -1540,9 +1540,9 @@ Info (21057): Implemented 17 device resources after synthesis - the final resour
     Info (21061): Implemented 12 logic cells
     Info (21065): Implemented 1 PLLs
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4700 megabytes
-    Info: Processing ended: Thu Jul 11 21:10:50 2024
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Peak virtual memory: 4698 megabytes
+    Info: Processing ended: Sat Jul 20 16:39:22 2024
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 

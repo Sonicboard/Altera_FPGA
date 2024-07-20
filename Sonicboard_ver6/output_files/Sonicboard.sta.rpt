@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Sonicboard
-Thu Jul 11 21:10:56 2024
+Sat Jul 20 16:39:33 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -104,16 +104,16 @@ applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 20          ;
-; Maximum allowed            ; 14          ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 10          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 14          ;
+; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-14        ; < 0.1%      ;
-;     Processors 15-20       ;   0.0%      ;
+;     Processors 2-10        ; < 0.1%      ;
+;     Processors 11-12       ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -122,7 +122,7 @@ applicable agreement for further details.
 +------------------------+--------+--------------------------+
 ; SDC File Path          ; Status ; Read at                  ;
 +------------------------+--------+--------------------------+
-; timing_constraints.sdc ; OK     ; Thu Jul 11 21:10:55 2024 ;
+; timing_constraints.sdc ; OK     ; Sat Jul 20 16:39:32 2024 ;
 +------------------------+--------+--------------------------+
 
 
@@ -1089,10 +1089,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Thu Jul 11 21:10:55 2024
+    Info: Processing started: Sat Jul 20 16:39:31 2024
 Info: Command: quartus_sta Sonicboard -c Sonicboard
 Info: qsta_default_script.tcl version: #1
-Info (11104): Parallel Compilation has detected 20 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 14 of the 14 physical processors detected instead.
+Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 10 of the 10 physical processors detected instead.
 Info (21077): Core supply voltage is 1.2V
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -1174,9 +1174,9 @@ Info (332146): Worst-case minimum pulse width slack is 9.594
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4811 megabytes
-    Info: Processing ended: Thu Jul 11 21:10:56 2024
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Peak virtual memory: 4737 megabytes
+    Info: Processing ended: Sat Jul 20 16:39:33 2024
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 
