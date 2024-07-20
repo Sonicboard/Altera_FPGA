@@ -1,0 +1,27 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Clock_Divider is
+    port ( 
+           CLK_BASE : in  std_logic;   -- 50MHz Base Clock by OSC
+           CLK_8_33MHz : out  std_logic  -- 8.33MHz 
+         );
+end Clock_Divider;
+
+architecture Behavioral of Clock_Divider is
+    signal Counter : integer range 0 to 2 := 0;  -- Counter range 0 ~ 2
+    signal CLK_OUT : std_logic := '0';  -- internal clock
+begin
+    process(CLK_BASE)
+    begin
+        if rising_edge(CLK_BASE) then
+            Counter <= Counter + 1;  -- Counter count up
+            if Counter = 2 then 
+                CLK_OUT <= not CLK_OUT;  -- CLK_OUT Toggle
+                Counter <= 0;        -- Reset Counter
+            end if;
+        end if;
+    end process;
+
+    CLK_8_33MHz <= CLK_OUT;  -- Allocate the signal at output port pin
+end Behavioral;

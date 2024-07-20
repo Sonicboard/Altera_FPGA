@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Sonicboard">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Schematic|Masterclock:inst1|altpll:altpll_component" CBX_FILE_NAME="Masterclock_altpll.v"/>
+	</PROJECT>
+</LOG_ROOT>
