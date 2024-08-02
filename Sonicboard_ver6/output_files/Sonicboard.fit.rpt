@@ -1,5 +1,5 @@
 Fitter report for Sonicboard
-Sat Jul 20 17:16:13 2024
+Fri Aug 02 22:17:49 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -68,7 +68,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Sat Jul 20 17:16:13 2024      ;
+; Fitter Status                      ; Successful - Fri Aug 02 22:17:49 2024      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; Sonicboard                                 ;
 ; Top-level Entity Name              ; Schematic                                  ;
@@ -155,12 +155,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 10          ;
 ;                            ;             ;
-; Average used               ; 5.50        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 10          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-10        ;  50.0%      ;
+;     Processors 2-10        ; < 0.1%      ;
 ;     Processors 11-12       ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -992,7 +992,7 @@ Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
 Warning (15064): PLL "Masterclock:inst1|altpll:altpll_component|Masterclock_altpll:auto_generated|pll1" output port clk[0] feeds output pin "SHIFT_CLOCK_1~output" via non-dedicated routing -- jitter performance depends on switching rate of other design elements. Use PLL dedicated clock outputs to ensure jitter performance
 Warning (15064): PLL "Masterclock:inst1|altpll:altpll_component|Masterclock_altpll:auto_generated|pll1" output port clk[1] feeds output pin "LATCH_CLOCK_1~output" via non-dedicated routing -- jitter performance depends on switching rate of other design elements. Use PLL dedicated clock outputs to ensure jitter performance
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -1005,7 +1005,7 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.00 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.08 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1013,10 +1013,10 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file C:/Users/USER/Documents/github/Altera_FPGA/Sonicboard_ver6/output_files/Sonicboard.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 5758 megabytes
-    Info: Processing ended: Sat Jul 20 17:16:13 2024
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 5756 megabytes
+    Info: Processing ended: Fri Aug 02 22:17:49 2024
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:02
 
 
 +----------------------------+

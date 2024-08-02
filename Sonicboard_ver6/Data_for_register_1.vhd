@@ -110,4 +110,3 @@ begin
     latch_out <= latch_flag;
 
 end Behavioral;
-
