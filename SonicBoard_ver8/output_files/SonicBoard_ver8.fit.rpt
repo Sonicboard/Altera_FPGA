@@ -1,5 +1,5 @@
 Fitter report for SonicBoard_ver8
-Fri Aug 02 22:51:10 2024
+Sat Aug 03 18:05:29 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -68,7 +68,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Fri Aug 02 22:51:10 2024      ;
+; Fitter Status                      ; Successful - Sat Aug 03 18:05:29 2024      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; SonicBoard_ver8                            ;
 ; Top-level Entity Name              ; BlockDiagram_SonicBoard_ver8               ;
@@ -152,16 +152,15 @@ applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 10          ;
+; Number detected on machine ; 6           ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 10          ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-10        ; < 0.1%      ;
-;     Processors 11-12       ;   0.0%      ;
+;     Processors 2-6         ; < 0.1%      ;
 +----------------------------+-------------+
 
 
@@ -182,8 +181,8 @@ applicable agreement for further details.
 ; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+-------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 69 ) ; 0.00 % ( 0 / 69 )          ; 0.00 % ( 0 / 69 )        ;
-;     -- Achieved     ; 0.00 % ( 0 / 69 ) ; 0.00 % ( 0 / 69 )          ; 0.00 % ( 0 / 69 )        ;
+;     -- Requested    ; 0.00 % ( 0 / 68 ) ; 0.00 % ( 0 / 68 )          ; 0.00 % ( 0 / 68 )        ;
+;     -- Achieved     ; 0.00 % ( 0 / 68 ) ; 0.00 % ( 0 / 68 )          ; 0.00 % ( 0 / 68 )        ;
 ;                     ;                   ;                            ;                          ;
 ; Routing (by net)    ;                   ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -207,14 +206,14 @@ applicable agreement for further details.
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Top                            ; 0.00 % ( 0 / 56 )     ; N/A                     ; Source File       ; N/A                 ;       ;
-; hard_block:auto_generated_inst ; 0.00 % ( 0 / 13 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; hard_block:auto_generated_inst ; 0.00 % ( 0 / 12 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
 
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/USER/Documents/github/Altera_FPGA/SonicBoard_ver8/output_files/SonicBoard_ver8.pin.
+The pin-out file can be found in C:/Users/johnj/Documents/GitHub/Altera_FPGA/SonicBoard_ver8/output_files/SonicBoard_ver8.pin.
 
 
 +--------------------------------------------------------------------+
@@ -260,10 +259,10 @@ The pin-out file can be found in C:/Users/USER/Documents/github/Altera_FPGA/Soni
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )        ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%         ;
 ; Peak interconnect usage (total/H/V)         ; 0% / 0% / 0%         ;
-; Maximum fan-out                             ; 19                   ;
+; Maximum fan-out                             ; 20                   ;
 ; Highest non-global fan-out                  ; 10                   ;
-; Total fan-out                               ; 144                  ;
-; Average fan-out                             ; 2.09                 ;
+; Total fan-out                               ; 143                  ;
+; Average fan-out                             ; 2.10                 ;
 +---------------------------------------------+----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -303,7 +302,7 @@ The pin-out file can be found in C:/Users/USER/Documents/github/Altera_FPGA/Soni
 ; Total memory bits                           ; 0                   ; 0                              ;
 ; Total RAM block bits                        ; 0                   ; 0                              ;
 ; PLL                                         ; 0 / 2 ( 0 % )       ; 1 / 2 ( 50 % )                 ;
-; Clock control block                         ; 0 / 12 ( 0 % )      ; 2 / 12 ( 16 % )                ;
+; Clock control block                         ; 0 / 12 ( 0 % )      ; 1 / 12 ( 8 % )                 ;
 ;                                             ;                     ;                                ;
 ; Connections                                 ;                     ;                                ;
 ;     -- Input Connections                    ; 20                  ; 1                              ;
@@ -312,7 +311,7 @@ The pin-out file can be found in C:/Users/USER/Documents/github/Altera_FPGA/Soni
 ;     -- Registered Output Connections        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Internal Connections                        ;                     ;                                ;
-;     -- Total Connections                    ; 136                 ; 29                             ;
+;     -- Total Connections                    ; 136                 ; 28                             ;
 ;     -- Registered Connections               ; 89                  ; 0                              ;
 ;                                             ;                     ;                                ;
 ; External Connections                        ;                     ;                                ;
@@ -345,7 +344,7 @@ The pin-out file can be found in C:/Users/USER/Documents/github/Altera_FPGA/Soni
 +------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 ; Name       ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ;
 +------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
-; BasicClock ; 23    ; 1        ; 0            ; 11           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ;
+; BasicClock ; 23    ; 1        ; 0            ; 11           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ;
 +------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 
 
@@ -354,9 +353,9 @@ The pin-out file can be found in C:/Users/USER/Documents/github/Altera_FPGA/Soni
 +------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name       ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; DataPin    ; 138   ; 8        ; 7            ; 24           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; LatchClock ; 39    ; 3        ; 1            ; 0            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; ShiftClock ; 43    ; 3        ; 5            ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; DataPin    ; 34    ; 2        ; 0            ; 5            ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; LatchClock ; 3     ; 1        ; 0            ; 23           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; ShiftClock ; 2     ; 1        ; 0            ; 23           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 +------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -378,7 +377,6 @@ The pin-out file can be found in C:/Users/USER/Documents/github/Altera_FPGA/Soni
 ; 97       ; MSEL2                       ; -                        ; -                       ; Dedicated Programming Pin ;
 ; 97       ; MSEL3                       ; -                        ; -                       ; Dedicated Programming Pin ;
 ; 101      ; DIFFIO_R3n, nCEO            ; Use as programming pin   ; ~ALTERA_nCEO~           ; Dual Purpose Pin          ;
-; 138      ; DATA6                       ; Use as regular IO        ; DataPin                 ; Dual Purpose Pin          ;
 +----------+-----------------------------+--------------------------+-------------------------+---------------------------+
 
 
@@ -387,14 +385,14 @@ The pin-out file can be found in C:/Users/USER/Documents/github/Altera_FPGA/Soni
 +----------+-----------------+---------------+--------------+
 ; I/O Bank ; Usage           ; VCCIO Voltage ; VREF Voltage ;
 +----------+-----------------+---------------+--------------+
-; 1        ; 5 / 11 ( 45 % ) ; 2.5V          ; --           ;
-; 2        ; 0 / 8 ( 0 % )   ; 2.5V          ; --           ;
-; 3        ; 2 / 11 ( 18 % ) ; 2.5V          ; --           ;
+; 1        ; 7 / 11 ( 64 % ) ; 2.5V          ; --           ;
+; 2        ; 1 / 8 ( 13 % )  ; 2.5V          ; --           ;
+; 3        ; 0 / 11 ( 0 % )  ; 2.5V          ; --           ;
 ; 4        ; 0 / 14 ( 0 % )  ; 2.5V          ; --           ;
 ; 5        ; 0 / 13 ( 0 % )  ; 2.5V          ; --           ;
 ; 6        ; 1 / 10 ( 10 % ) ; 2.5V          ; --           ;
 ; 7        ; 0 / 13 ( 0 % )  ; 2.5V          ; --           ;
-; 8        ; 1 / 12 ( 8 % )  ; 2.5V          ; --           ;
+; 8        ; 0 / 12 ( 0 % )  ; 2.5V          ; --           ;
 +----------+-----------------+---------------+--------------+
 
 
@@ -404,8 +402,8 @@ The pin-out file can be found in C:/Users/USER/Documents/github/Altera_FPGA/Soni
 ; Location ; Pad Number ; I/O Bank ; Pin Name/Usage                                            ; Dir.   ; I/O Standard ; Voltage ; I/O Type   ; User Assignment ; Bus Hold ; Weak Pull Up ;
 +----------+------------+----------+-----------------------------------------------------------+--------+--------------+---------+------------+-----------------+----------+--------------+
 ; 1        ; 0          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; 2        ; 1          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; 3        ; 2          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; 2        ; 1          ; 1        ; ShiftClock                                                ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; 3        ; 2          ; 1        ; LatchClock                                                ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 4        ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 5        ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; 6        ; 5          ; 1        ; ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP     ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; On           ;
@@ -425,7 +423,7 @@ The pin-out file can be found in C:/Users/USER/Documents/github/Altera_FPGA/Soni
 ; 20       ; 21         ; 1        ; #TDO                                                      ; output ;              ;         ; --         ;                 ; --       ; --           ;
 ; 21       ; 22         ; 1        ; ^nCE                                                      ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; 22       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; 23       ; 24         ; 1        ; BasicClock                                                ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; 23       ; 24         ; 1        ; BasicClock                                                ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 24       ; 25         ; 2        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; 25       ; 26         ; 2        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; 26       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -436,16 +434,16 @@ The pin-out file can be found in C:/Users/USER/Documents/github/Altera_FPGA/Soni
 ; 31       ; 36         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; 32       ; 39         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; 33       ; 40         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; 34       ; 41         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; 34       ; 41         ; 2        ; DataPin                                                   ; output ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; 35       ;            ; --       ; VCCA1                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; 36       ;            ;          ; GNDA1                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 37       ;            ;          ; VCCD_PLL1                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; 38       ; 45         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; 39       ; 46         ; 3        ; LatchClock                                                ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; 39       ; 46         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; 40       ;            ; 3        ; VCCIO3                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; 41       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 42       ; 52         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; 43       ; 53         ; 3        ; ShiftClock                                                ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; 43       ; 53         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; 44       ; 54         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; 45       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; 46       ; 58         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
@@ -541,7 +539,7 @@ The pin-out file can be found in C:/Users/USER/Documents/github/Altera_FPGA/Soni
 ; 135      ; 185        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; 136      ; 187        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; 137      ; 190        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; 138      ; 191        ; 8        ; DataPin                                                   ; output ; 2.5 V        ;         ; Column I/O ; N               ; no       ; Off          ;
+; 138      ; 191        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; 139      ;            ; 8        ; VCCIO8                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; 140      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; 141      ; 195        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -638,15 +636,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                                                        ;
-+---------------------------------------------------------------------------------------------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                                                                                        ; Location         ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+---------------------------------------------------------------------------------------------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; BasicClock                                                                                  ; PIN_23           ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; Data_for_register_1:inst2|Equal0~0                                                          ; LCCOMB_X3_Y4_N10 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; MasterClock:inst|altpll:altpll_component|MasterClock_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1            ; 19      ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-+---------------------------------------------------------------------------------------------+------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                                                         ;
++---------------------------------------------------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                                                                                        ; Location          ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++---------------------------------------------------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; BasicClock                                                                                  ; PIN_23            ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; Data_for_register_1:inst2|Equal0~0                                                          ; LCCOMB_X11_Y21_N4 ; 6       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; MasterClock:inst|altpll:altpll_component|MasterClock_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1             ; 20      ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
++---------------------------------------------------------------------------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -654,71 +652,70 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name                                                                                        ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------------------------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; MasterClock:inst|altpll:altpll_component|MasterClock_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1    ; 19      ; 0                                    ; Global Clock         ; GCLK3            ; --                        ;
+; MasterClock:inst|altpll:altpll_component|MasterClock_altpll:auto_generated|wire_pll1_clk[0] ; PLL_1    ; 20      ; 0                                    ; Global Clock         ; GCLK3            ; --                        ;
 +---------------------------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Non-Global High Fan-Out Signals                                                                                            ;
-+------------------------------------------------------------------------------------------------------------------+---------+
-; Name                                                                                                             ; Fan-Out ;
-+------------------------------------------------------------------------------------------------------------------+---------+
-; Data_for_register_1:inst2|Phase_data_index[4]                                                                    ; 10      ;
-; Data_for_register_1:inst2|Phase_register[0][7]                                                                   ; 8       ;
-; Data_for_register_1:inst2|Phase_data_index[3]                                                                    ; 8       ;
-; Data_for_register_1:inst2|bit_index[1]                                                                           ; 7       ;
-; Data_for_register_1:inst2|Equal0~0                                                                               ; 6       ;
-; Data_for_register_1:inst2|bit_index[0]                                                                           ; 6       ;
-; Data_for_register_1:inst2|Phase_data_index[2]                                                                    ; 6       ;
-; Data_for_register_1:inst2|Phase_data_index[1]                                                                    ; 6       ;
-; Data_for_register_1:inst2|Phase_data_index[0]                                                                    ; 5       ;
-; Data_for_register_1:inst2|bit_index[2]                                                                           ; 3       ;
-; Data_for_register_1:inst2|Mux2~0                                                                                 ; 2       ;
-; Data_for_register_1:inst2|Mux4~0                                                                                 ; 2       ;
-; Data_for_register_1:inst2|latch_flag~0                                                                           ; 2       ;
-; Data_for_register_1:inst2|latch_flag                                                                             ; 2       ;
-; Data_for_register_1:inst2|Phase_register[0][7]~feeder                                                            ; 1       ;
-; MasterClock:inst|altpll:altpll_component|MasterClock_altpll:auto_generated|wire_pll1_clk[0]~clkctrl_e_ShiftClock ; 1       ;
-; BasicClock~input                                                                                                 ; 1       ;
-; Data_for_register_1:inst2|bit_index[0]~2                                                                         ; 1       ;
-; Data_for_register_1:inst2|bit_index[2]~1                                                                         ; 1       ;
-; Data_for_register_1:inst2|Mux4~1                                                                                 ; 1       ;
-; Data_for_register_1:inst2|Mux0~1                                                                                 ; 1       ;
-; Data_for_register_1:inst2|Mux6~0                                                                                 ; 1       ;
-; Data_for_register_1:inst2|Mux5~1                                                                                 ; 1       ;
-; Data_for_register_1:inst2|Mux5~0                                                                                 ; 1       ;
-; Data_for_register_1:inst2|Mux0~0                                                                                 ; 1       ;
-; Data_for_register_1:inst2|Mux1~2                                                                                 ; 1       ;
-; Data_for_register_1:inst2|Mux1~1                                                                                 ; 1       ;
-; Data_for_register_1:inst2|Mux2~1                                                                                 ; 1       ;
-; Data_for_register_1:inst2|bit_index[1]~0                                                                         ; 1       ;
-; Data_for_register_1:inst2|Mux1~0                                                                                 ; 1       ;
-; Data_for_register_1:inst2|latch_flag~1                                                                           ; 1       ;
-; Data_for_register_1:inst2|Mux8~4                                                                                 ; 1       ;
-; Data_for_register_1:inst2|Mux8~3                                                                                 ; 1       ;
-; Data_for_register_1:inst2|current_byte[3]                                                                        ; 1       ;
-; Data_for_register_1:inst2|Mux8~2                                                                                 ; 1       ;
-; Data_for_register_1:inst2|current_byte[0]                                                                        ; 1       ;
-; Data_for_register_1:inst2|current_byte[1]                                                                        ; 1       ;
-; Data_for_register_1:inst2|current_byte[2]                                                                        ; 1       ;
-; Data_for_register_1:inst2|Mux8~1                                                                                 ; 1       ;
-; Data_for_register_1:inst2|current_byte[7]                                                                        ; 1       ;
-; Data_for_register_1:inst2|Mux8~0                                                                                 ; 1       ;
-; Data_for_register_1:inst2|current_byte[4]                                                                        ; 1       ;
-; Data_for_register_1:inst2|current_byte[5]                                                                        ; 1       ;
-; Data_for_register_1:inst2|current_byte[6]                                                                        ; 1       ;
-; Data_for_register_1:inst2|data_outpin_1                                                                          ; 1       ;
-; Data_for_register_1:inst2|Phase_data_index[4]~13                                                                 ; 1       ;
-; Data_for_register_1:inst2|Phase_data_index[3]~12                                                                 ; 1       ;
-; Data_for_register_1:inst2|Phase_data_index[3]~11                                                                 ; 1       ;
-; Data_for_register_1:inst2|Phase_data_index[2]~10                                                                 ; 1       ;
-; Data_for_register_1:inst2|Phase_data_index[2]~9                                                                  ; 1       ;
-; Data_for_register_1:inst2|Phase_data_index[1]~8                                                                  ; 1       ;
-; Data_for_register_1:inst2|Phase_data_index[1]~7                                                                  ; 1       ;
-; Data_for_register_1:inst2|Phase_data_index[0]~6                                                                  ; 1       ;
-; Data_for_register_1:inst2|Phase_data_index[0]~5                                                                  ; 1       ;
-; MasterClock:inst|altpll:altpll_component|MasterClock_altpll:auto_generated|wire_pll1_fbout                       ; 1       ;
-+------------------------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------+
+; Non-Global High Fan-Out Signals                                                                      ;
++--------------------------------------------------------------------------------------------+---------+
+; Name                                                                                       ; Fan-Out ;
++--------------------------------------------------------------------------------------------+---------+
+; Data_for_register_1:inst2|Phase_data_index[4]                                              ; 10      ;
+; Data_for_register_1:inst2|Phase_register[0][7]                                             ; 8       ;
+; Data_for_register_1:inst2|Phase_data_index[3]                                              ; 8       ;
+; Data_for_register_1:inst2|bit_index[1]                                                     ; 7       ;
+; Data_for_register_1:inst2|Equal0~0                                                         ; 6       ;
+; Data_for_register_1:inst2|bit_index[0]                                                     ; 6       ;
+; Data_for_register_1:inst2|Phase_data_index[2]                                              ; 6       ;
+; Data_for_register_1:inst2|Phase_data_index[1]                                              ; 6       ;
+; Data_for_register_1:inst2|Phase_data_index[0]                                              ; 5       ;
+; Data_for_register_1:inst2|bit_index[2]                                                     ; 3       ;
+; Data_for_register_1:inst2|Mux2~0                                                           ; 2       ;
+; Data_for_register_1:inst2|Mux4~0                                                           ; 2       ;
+; Data_for_register_1:inst2|latch_flag~0                                                     ; 2       ;
+; Data_for_register_1:inst2|latch_flag                                                       ; 2       ;
+; Data_for_register_1:inst2|Phase_register[0][7]~feeder                                      ; 1       ;
+; BasicClock~input                                                                           ; 1       ;
+; Data_for_register_1:inst2|bit_index[0]~2                                                   ; 1       ;
+; Data_for_register_1:inst2|bit_index[2]~1                                                   ; 1       ;
+; Data_for_register_1:inst2|Mux4~1                                                           ; 1       ;
+; Data_for_register_1:inst2|Mux0~1                                                           ; 1       ;
+; Data_for_register_1:inst2|Mux6~0                                                           ; 1       ;
+; Data_for_register_1:inst2|Mux5~1                                                           ; 1       ;
+; Data_for_register_1:inst2|Mux5~0                                                           ; 1       ;
+; Data_for_register_1:inst2|Mux0~0                                                           ; 1       ;
+; Data_for_register_1:inst2|Mux1~2                                                           ; 1       ;
+; Data_for_register_1:inst2|Mux1~1                                                           ; 1       ;
+; Data_for_register_1:inst2|Mux2~1                                                           ; 1       ;
+; Data_for_register_1:inst2|bit_index[1]~0                                                   ; 1       ;
+; Data_for_register_1:inst2|Mux1~0                                                           ; 1       ;
+; Data_for_register_1:inst2|latch_flag~1                                                     ; 1       ;
+; Data_for_register_1:inst2|Mux8~4                                                           ; 1       ;
+; Data_for_register_1:inst2|Mux8~3                                                           ; 1       ;
+; Data_for_register_1:inst2|current_byte[3]                                                  ; 1       ;
+; Data_for_register_1:inst2|Mux8~2                                                           ; 1       ;
+; Data_for_register_1:inst2|current_byte[0]                                                  ; 1       ;
+; Data_for_register_1:inst2|current_byte[1]                                                  ; 1       ;
+; Data_for_register_1:inst2|current_byte[2]                                                  ; 1       ;
+; Data_for_register_1:inst2|Mux8~1                                                           ; 1       ;
+; Data_for_register_1:inst2|current_byte[7]                                                  ; 1       ;
+; Data_for_register_1:inst2|Mux8~0                                                           ; 1       ;
+; Data_for_register_1:inst2|current_byte[4]                                                  ; 1       ;
+; Data_for_register_1:inst2|current_byte[5]                                                  ; 1       ;
+; Data_for_register_1:inst2|current_byte[6]                                                  ; 1       ;
+; Data_for_register_1:inst2|data_outpin_1                                                    ; 1       ;
+; Data_for_register_1:inst2|Phase_data_index[4]~13                                           ; 1       ;
+; Data_for_register_1:inst2|Phase_data_index[3]~12                                           ; 1       ;
+; Data_for_register_1:inst2|Phase_data_index[3]~11                                           ; 1       ;
+; Data_for_register_1:inst2|Phase_data_index[2]~10                                           ; 1       ;
+; Data_for_register_1:inst2|Phase_data_index[2]~9                                            ; 1       ;
+; Data_for_register_1:inst2|Phase_data_index[1]~8                                            ; 1       ;
+; Data_for_register_1:inst2|Phase_data_index[1]~7                                            ; 1       ;
+; Data_for_register_1:inst2|Phase_data_index[0]~6                                            ; 1       ;
+; Data_for_register_1:inst2|Phase_data_index[0]~5                                            ; 1       ;
+; MasterClock:inst|altpll:altpll_component|MasterClock_altpll:auto_generated|wire_pll1_fbout ; 1       ;
++--------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------+
@@ -726,14 +723,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------+
 ; Routing Resource Type ; Usage                 ;
 +-----------------------+-----------------------+
-; Block interconnects   ; 16 / 32,401 ( < 1 % ) ;
+; Block interconnects   ; 17 / 32,401 ( < 1 % ) ;
 ; C16 interconnects     ; 0 / 1,326 ( 0 % )     ;
 ; C4 interconnects      ; 5 / 21,816 ( < 1 % )  ;
-; Direct links          ; 11 / 32,401 ( < 1 % ) ;
+; Direct links          ; 13 / 32,401 ( < 1 % ) ;
 ; Global clocks         ; 1 / 10 ( 10 % )       ;
-; Local interconnects   ; 22 / 10,320 ( < 1 % ) ;
-; R24 interconnects     ; 0 / 1,289 ( 0 % )     ;
-; R4 interconnects      ; 5 / 28,186 ( < 1 % )  ;
+; Local interconnects   ; 21 / 10,320 ( < 1 % ) ;
+; R24 interconnects     ; 1 / 1,289 ( < 1 % )   ;
+; R4 interconnects      ; 4 / 28,186 ( < 1 % )  ;
 +-----------------------+-----------------------+
 
 
@@ -849,10 +846,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; I/O Rules Statistic              ; Total ;
 +----------------------------------+-------+
 ; Total I/O Rules                  ; 30    ;
-; Number of I/O Rules Passed       ; 9     ;
+; Number of I/O Rules Passed       ; 12    ;
 ; Number of I/O Rules Failed       ; 0     ;
 ; Number of I/O Rules Unchecked    ; 0     ;
-; Number of I/O Rules Inapplicable ; 21    ;
+; Number of I/O Rules Inapplicable ; 18    ;
 +----------------------------------+-------+
 
 
@@ -861,13 +858,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+-----------+-----------------------------------+------------------------------------------------------------------------------------------------------+----------+--------------------------------------------------------------------------+---------------------+-------------------+
 ; Status       ; ID        ; Category                          ; Rule Description                                                                                     ; Severity ; Information                                                              ; Area                ; Extra Information ;
 +--------------+-----------+-----------------------------------+------------------------------------------------------------------------------------------------------+----------+--------------------------------------------------------------------------+---------------------+-------------------+
-; Inapplicable ; IO_000001 ; Capacity Checks                   ; Number of pins in an I/O bank should not exceed the number of locations available.                   ; Critical ; No Location assignments found.                                           ; I/O                 ;                   ;
+; Pass         ; IO_000001 ; Capacity Checks                   ; Number of pins in an I/O bank should not exceed the number of locations available.                   ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Inapplicable ; IO_000002 ; Capacity Checks                   ; Number of clocks in an I/O bank should not exceed the number of clocks available.                    ; Critical ; No Global Signal assignments found.                                      ; I/O                 ;                   ;
-; Inapplicable ; IO_000003 ; Capacity Checks                   ; Number of pins in a Vrefgroup should not exceed the number of locations available.                   ; Critical ; No Location assignments found.                                           ; I/O                 ;                   ;
+; Pass         ; IO_000003 ; Capacity Checks                   ; Number of pins in a Vrefgroup should not exceed the number of locations available.                   ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Inapplicable ; IO_000004 ; Voltage Compatibility Checks      ; The I/O bank should support the requested VCCIO.                                                     ; Critical ; No IOBANK_VCCIO assignments found.                                       ; I/O                 ;                   ;
 ; Inapplicable ; IO_000005 ; Voltage Compatibility Checks      ; The I/O bank should not have competing VREF values.                                                  ; Critical ; No VREF I/O Standard assignments found.                                  ; I/O                 ;                   ;
 ; Pass         ; IO_000006 ; Voltage Compatibility Checks      ; The I/O bank should not have competing VCCIO values.                                                 ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
-; Inapplicable ; IO_000007 ; Valid Location Checks             ; Checks for unavailable locations.                                                                    ; Critical ; No Location assignments found.                                           ; I/O                 ;                   ;
+; Pass         ; IO_000007 ; Valid Location Checks             ; Checks for unavailable locations.                                                                    ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Inapplicable ; IO_000008 ; Valid Location Checks             ; Checks for reserved locations.                                                                       ; Critical ; No reserved LogicLock region found.                                      ; I/O                 ;                   ;
 ; Pass         ; IO_000009 ; I/O Properties Checks for One I/O ; The location should support the requested I/O standard.                                              ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
 ; Pass         ; IO_000010 ; I/O Properties Checks for One I/O ; The location should support the requested I/O direction.                                             ; Critical ; 0 such failures found.                                                   ; I/O                 ;                   ;
@@ -895,20 +892,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+-----------+-----------------------------------+------------------------------------------------------------------------------------------------------+----------+--------------------------------------------------------------------------+---------------------+-------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; I/O Rules Matrix                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
-+--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Pin/Rules          ; IO_000001    ; IO_000002    ; IO_000003    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
-+--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 0            ; 0            ; 0            ; 0            ; 0            ; 4         ; 0            ; 0            ; 4         ; 4         ; 0            ; 3            ; 0            ; 0            ; 1            ; 0            ; 3            ; 1            ; 0            ; 0            ; 0            ; 3            ; 0            ; 0            ; 0            ; 0            ; 0            ; 4         ; 0            ; 0            ;
-; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 4            ; 4            ; 4            ; 4            ; 4            ; 0         ; 4            ; 4            ; 0         ; 0         ; 4            ; 1            ; 4            ; 4            ; 3            ; 4            ; 1            ; 3            ; 4            ; 4            ; 4            ; 1            ; 4            ; 4            ; 4            ; 4            ; 4            ; 0         ; 4            ; 4            ;
-; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; DataPin            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; LatchClock         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; ShiftClock         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; BasicClock         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-+--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; I/O Rules Matrix                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
++--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
+; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
++--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
+; Total Pass         ; 4         ; 0            ; 4         ; 0            ; 0            ; 4         ; 4         ; 0            ; 4         ; 4         ; 0            ; 3            ; 0            ; 0            ; 1            ; 0            ; 3            ; 1            ; 0            ; 0            ; 0            ; 3            ; 0            ; 0            ; 0            ; 0            ; 0            ; 4         ; 0            ; 0            ;
+; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
+; Total Inapplicable ; 0         ; 4            ; 0         ; 4            ; 4            ; 0         ; 0         ; 4            ; 0         ; 0         ; 4            ; 1            ; 4            ; 4            ; 3            ; 4            ; 1            ; 3            ; 4            ; 4            ; 4            ; 1            ; 4            ; 4            ; 4            ; 4            ; 4            ; 0         ; 4            ; 4            ;
+; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
+; DataPin            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; LatchClock         ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; ShiftClock         ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; BasicClock         ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
++--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
 
 +---------------------------------------------------------------------------------------------+
@@ -951,7 +948,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
-Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 10 of the 10 physical processors detected instead.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (119006): Selected device EP4CE6E22C6 for design "SonicBoard_ver8"
 Info (21077): Core supply voltage is 1.2V
 Info (21077): Low junction temperature is 0 degrees C
@@ -971,14 +968,8 @@ Info (169124): Fitter converted 5 user pins into dedicated programming pins
     Info (169125): Pin ~ALTERA_DATA0~ is reserved at location 13
     Info (169125): Pin ~ALTERA_nCEO~ is reserved at location 101
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Critical Warning (169085): No exact pin location assignment(s) for 4 pins of 4 total pins
-    Info (169086): Pin DataPin not assigned to an exact location on the device
-    Info (169086): Pin LatchClock not assigned to an exact location on the device
-    Info (169086): Pin ShiftClock not assigned to an exact location on the device
-    Info (169086): Pin BasicClock not assigned to an exact location on the device
 Info (176353): Automatically promoted node MasterClock:inst|altpll:altpll_component|MasterClock_altpll:auto_generated|wire_pll1_clk[0] (placed in counter C0 of PLL_1)
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
-    Info (176355): Automatically promoted destinations to use location or clock signal External Clock Output CLKCTRL_PLL1E0
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'SonicBoard_ver8.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained generated clocks found in the design
 Info (332144): No user constrained base clocks found in the design
@@ -989,20 +980,8 @@ Info (332130): Timing requirements not specified -- quality metrics such as perf
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (176214): Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
-    Info (176211): Number of I/O pins in group: 2 (unused VREF, 2.5V VCCIO, 0 input, 2 output, 0 bidirectional)
-        Info (176212): I/O standards used: 2.5 V.
-Info (176215): I/O bank details before I/O pin placement
-    Info (176214): Statistics of I/O banks
-        Info (176213): I/O bank number 1 does not use VREF pins and has undetermined VCCIO pins. 5 total pin(s) used --  6 pins available
-        Info (176213): I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  8 pins available
-        Info (176213): I/O bank number 3 does not use VREF pins and has 2.5V VCCIO pins. 1 total pin(s) used --  10 pins available
-        Info (176213): I/O bank number 4 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  14 pins available
-        Info (176213): I/O bank number 5 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  13 pins available
-        Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  9 pins available
-        Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  13 pins available
-        Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  12 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Warning (15064): PLL "MasterClock:inst|altpll:altpll_component|MasterClock_altpll:auto_generated|pll1" output port clk[0] feeds output pin "ShiftClock~output" via non-dedicated routing -- jitter performance depends on switching rate of other design elements. Use PLL dedicated clock outputs to ensure jitter performance
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -1010,28 +989,28 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X0_Y0 to location X10_Y11
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X0_Y12 to location X10_Y24
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.00 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.14 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
-Info (144001): Generated suppressed messages file C:/Users/USER/Documents/github/Altera_FPGA/SonicBoard_ver8/output_files/SonicBoard_ver8.fit.smsg
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (144001): Generated suppressed messages file C:/Users/johnj/Documents/GitHub/Altera_FPGA/SonicBoard_ver8/output_files/SonicBoard_ver8.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 5754 megabytes
-    Info: Processing ended: Fri Aug 02 22:51:11 2024
+    Info: Peak virtual memory: 5511 megabytes
+    Info: Processing ended: Sat Aug 03 18:05:29 2024
     Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:04
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/USER/Documents/github/Altera_FPGA/SonicBoard_ver8/output_files/SonicBoard_ver8.fit.smsg.
+The suppressed messages can be found in C:/Users/johnj/Documents/GitHub/Altera_FPGA/SonicBoard_ver8/output_files/SonicBoard_ver8.fit.smsg.
 
 

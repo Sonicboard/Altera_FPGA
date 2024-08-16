@@ -1,0 +1,53 @@
+|Block1
+latchpin <= sonic:inst.latchpin
+clk_in => Clock_Divider:inst2.clk_in
+clk_in => pin_name1.DATAIN
+clockpin <= sonic:inst.clockpin
+data_outpin <= sonic:inst.data_outpin
+clk_origin <= clk.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 <= clk_in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|sonic:inst
+clk_1280kHz => clock.CLK
+clk_1280kHz => latch.CLK
+clk_1280kHz => i[0].CLK
+clk_1280kHz => i[1].CLK
+clk_1280kHz => i[2].CLK
+clk_1280kHz => i[3].CLK
+clk_1280kHz => i[4].CLK
+clk_1280kHz => i[5].CLK
+clk_1280kHz => i[6].CLK
+clk_1280kHz => j[0].CLK
+clk_1280kHz => j[1].CLK
+clk_1280kHz => j[2].CLK
+clk_1280kHz => j[3].CLK
+clk_1280kHz => j[4].CLK
+latchpin <= latch.DB_MAX_OUTPUT_PORT_TYPE
+clockpin <= clock.DB_MAX_OUTPUT_PORT_TYPE
+data_outpin <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|Clock_Divider:inst2
+clk_in => clk_out_internal.CLK
+clk_in => counter[0].CLK
+clk_in => counter[1].CLK
+clk_in => counter[2].CLK
+clk_in => counter[3].CLK
+clk_in => counter[4].CLK
+clk_in => counter[5].CLK
+clk_in => counter[6].CLK
+clk_in => counter[7].CLK
+clk_in => counter[8].CLK
+clk_in => counter[9].CLK
+clk_in => counter[10].CLK
+clk_in => counter[11].CLK
+clk_in => counter[12].CLK
+clk_in => counter[13].CLK
+clk_in => counter[14].CLK
+clk_in => counter[15].CLK
+clk_in => counter[16].CLK
+clk_in => counter[17].CLK
+clk_out <= clk_out_internal.DB_MAX_OUTPUT_PORT_TYPE
+
+

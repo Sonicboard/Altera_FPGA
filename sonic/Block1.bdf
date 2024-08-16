@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 176 160 344 176)
+	(rect 176 152 344 168)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "clk_in" (rect 5 0 33 12)(font "Arial" ))
 	(pt 168 8)
@@ -34,7 +34,7 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 120 176 168 192))
+	(annotation_block (location)(rect 120 168 168 184))
 )
 (pin
 	(output)
@@ -234,10 +234,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 320 168)
-	(pt 344 168)
-)
-(connector
 	(pt 368 232)
 	(pt 376 232)
 )
@@ -257,18 +253,6 @@ applicable agreement for further details.
 (connector
 	(pt 432 112)
 	(pt 368 112)
-)
-(connector
-	(pt 344 168)
-	(pt 368 168)
-)
-(connector
-	(pt 368 112)
-	(pt 368 168)
-)
-(connector
-	(pt 368 168)
-	(pt 368 232)
 )
 (connector
 	(text "clk" (rect 602 488 616 500)(font "Arial" ))
@@ -363,12 +347,28 @@ applicable agreement for further details.
 	(pt 624 272)
 	(pt 624 392)
 )
-(junction (pt 344 168))
+(connector
+	(pt 368 112)
+	(pt 368 160)
+)
+(connector
+	(pt 368 160)
+	(pt 368 232)
+)
+(connector
+	(pt 320 160)
+	(pt 344 160)
+)
+(connector
+	(pt 344 160)
+	(pt 368 160)
+)
 (junction (pt 624 272))
 (junction (pt 624 192))
-(junction (pt 368 168))
 (junction (pt 368 232))
 (junction (pt 624 392))
 (junction (pt 1048 168))
 (junction (pt 896 392))
 (junction (pt 968 320))
+(junction (pt 368 160))
+(junction (pt 344 160))
